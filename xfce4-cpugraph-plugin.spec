@@ -1,17 +1,16 @@
 Summary:	CPU Graph plugin for the Xfce panel
-Name:		xfce-cpugraph-plugin
+Name:		xfce4-cpugraph-plugin
 Version:	0.3.0
 Release:	%mkrel 5
 License:	BSD
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-cpugraph-plugin
-Source0:	xfce4-cpugraph-plugin-%{version}.tar.bz2
-Requires:	xfce-panel >= 4.3.0
-BuildRequires:	xfce-panel-devel >= 4.3.0
+Source0:	%{name}-%{version}.tar.bz2
+Requires:	xfce4-panel >= 4.4.2
+BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	libgdk_pixbuf2.0-devel
 BuildRequires:	perl(XML::Parser)
-Obsoletes:	xfce-cpugraph
-Provides:	xfce-cpugraph
+Obsoletes:	xfce-cpugraph-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
@@ -37,6 +36,6 @@ rm -rf %{buildroot}
 
 %files 
 %defattr(-,root,root)
-%doc AUTHORS COPYING ChangeLog INSTALL README TODO 
+%doc AUTHORS ChangeLog README TODO 
 %{_libdir}/xfce4/panel-plugins/
 %{_datadir}/xfce4/panel-plugins/*
