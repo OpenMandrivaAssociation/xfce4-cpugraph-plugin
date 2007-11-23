@@ -18,7 +18,7 @@ A panel plugin for Xfce panel.
 It shows a graph of your latest system load.
 
 %prep
-%setup -qn xfce4-cpugraph-plugin-%{version}
+%setup -q
 
 %build
 %configure2_5x
