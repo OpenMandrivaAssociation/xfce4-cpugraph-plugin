@@ -14,7 +14,7 @@ Obsoletes:	xfce-cpugraph-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
-A panel plugin for Xfce panel.
+xfce4-cpugraph-plugin is a panel plugin for Xfce panel.
 It shows a graph of your latest system load.
 
 %prep
