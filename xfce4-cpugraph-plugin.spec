@@ -28,13 +28,12 @@ It shows a graph of your latest system load.
 rm -rf %{buildroot}
 %makeinstall_std
 
-# remove unneeded devel files
-#rm -f %{buildroot}/%{_libdir}/xfce4/panel-plugins/libcpugraph.a 
+%find_lang %{name}
 
 %clean
 rm -rf %{buildroot}
 
-%files 
+%files -f %{name}.lang
 %defattr(-,root,root)
 %doc AUTHORS ChangeLog README TODO 
 %{_libdir}/xfce4/panel-plugins/
