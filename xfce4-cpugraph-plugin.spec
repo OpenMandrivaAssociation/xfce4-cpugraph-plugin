@@ -1,7 +1,7 @@
 Summary:	CPU Graph plugin for the Xfce panel
 Name:		xfce4-cpugraph-plugin
-Version:	0.3.0
-Release:	%mkrel 5
+Version:	0.4.0
+Release:	%mkrel 1
 License:	BSD
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-cpugraph-plugin
