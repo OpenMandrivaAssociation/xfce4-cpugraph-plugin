@@ -11,7 +11,7 @@ Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-cpugraph-plugin/%{url_v
 Requires:	xfce4-panel >= 4.8.0
 BuildRequires:	xfce4-panel-devel >= 4.8.0
 BuildRequires:	perl(XML::Parser)
-BuildRequires:	libxfcegui4-devel
+BuildRequires:	libxfceg4ui-devel
 Obsoletes:	xfce-cpugraph-plugin
 
 %description
@@ -32,6 +32,6 @@ It shows a graph of your latest system load.
 
 %files -f %{name}.lang
 %doc AUTHORS ChangeLog README
-%{_libdir}/xfce4/panel-plugins/
-%{_datadir}/xfce4/panel-plugins/*
+%{_libdir}/xfce4/panel/plugins/libcpugraph.so
+%{_datadir}/xfce4/panel/plugins/*.desktop
 %{_iconsdir}/hicolor/*/apps/*.png
