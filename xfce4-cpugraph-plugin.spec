@@ -11,7 +11,7 @@ Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-cpugraph-plugin/%{url_v
 Requires:	xfce4-panel >= 4.8.0
 BuildRequires:	xfce4-panel-devel >= 4.8.0
 BuildRequires:	perl(XML::Parser)
-BuildRequires:	libxfceg4ui-devel
+BuildRequires:	libxfce4ui-devel
 Obsoletes:	xfce-cpugraph-plugin
 
 %description
