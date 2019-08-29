@@ -24,6 +24,7 @@ It shows a graph of your latest system load.
 %setup -q
 
 %build
+%xdt_autogen
 %configure
 %make_build
 
