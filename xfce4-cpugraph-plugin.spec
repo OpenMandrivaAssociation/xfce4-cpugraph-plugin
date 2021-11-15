@@ -39,3 +39,4 @@ chmod +x %{buildroot}%{_libdir}/xfce4/panel/plugins/*.so
 %{_libdir}/xfce4/panel/plugins/*
 %{_datadir}/xfce4/panel/plugins/*
 %{_iconsdir}/hicolor/*/apps/*.png
+%{_iconsdir}/hicolor/scalable/apps/org.xfce.panel.cpugraph.svg
