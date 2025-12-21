@@ -9,6 +9,11 @@ Group:		Graphical desktop/Xfce
 URL:		https://goodies.xfce.org/projects/panel-plugins/xfce4-cpugraph-plugin
 Source0:	https://archive.xfce.org/src/panel-plugins/xfce4-cpugraph-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 Requires:	xfce4-panel
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	intltool
 BuildRequires:	xfce4-dev-tools
