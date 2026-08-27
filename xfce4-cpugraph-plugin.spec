@@ -2,19 +2,15 @@
 
 Summary:	CPU Graph plugin for the Xfce panel
 Name:		xfce4-cpugraph-plugin
-Version:	1.2.11
+Version:	1.3.0
 Release:	1
 License:	BSD
 Group:		Graphical desktop/Xfce
 URL:		https://goodies.xfce.org/projects/panel-plugins/xfce4-cpugraph-plugin
 Source0:	https://archive.xfce.org/src/panel-plugins/xfce4-cpugraph-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 Requires:	xfce4-panel
-BuildRequires:	autoconf
-BuildRequires:	automake
-BuildRequires:	libtool-base
-BuildRequires:	slibtool
+BuildRequires:	meson
 BuildRequires:	make
-BuildRequires:	perl(XML::Parser)
 BuildRequires:	intltool
 BuildRequires:	xfce4-dev-tools
 BuildRequires:	pkgconfig(gtk+-3.0)
@@ -29,11 +25,11 @@ It shows a graph of your latest system load.
 %autosetup -p1
 
 %build
-%configure
-%make_build
+%meson
+%meson_build
 
 %install
-%make_install
+%meson_install
 
 chmod +x %{buildroot}%{_libdir}/xfce4/panel/plugins/*.so
 
